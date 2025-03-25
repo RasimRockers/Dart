@@ -840,8 +840,8 @@ Dart does not have a separate keyword for **interfaces**. Instead, **any class c
 
 ### **Example:**  
 ```dart
-// Interface
-class Vehicle {
+// Define an abstract class
+abstract class Vehicle {
   void start(); // Abstract method
 }
 
@@ -855,7 +855,7 @@ class Car implements Vehicle {
 
 void main() {
   Car c = Car();
-  c.start();
+  c.start();  // Output: Car started
 }
 ```
 ### **Output:**
@@ -869,7 +869,7 @@ Car started
 ## **🔹 Key Differences: Abstract Class vs Interface**
 | Feature | Abstract Class | Interface |
 |---------|---------------|-----------|
-| **Can have concrete methods?** | ✅ Yes | ❌ No (only method declarations) |
+| **Can have concrete methods?** | ✅ Yes | ❌No (only method declarations) |
 | **Can have constructors?** | ✅ Yes | ❌ No |
 | **Can have instance variables?** | ✅ Yes | ❌ No |
 | **Supports multiple inheritance?** | ❌ No (Single Inheritance) | ✅ Yes (Multiple Interfaces using `implements`) |
