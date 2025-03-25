@@ -175,8 +175,8 @@ Dart allows **multiple constructors** using named constructors.
 
 ```dart
 class Laptop {
-  String brand;
-  int ram;
+  String ?brand;
+  int ?ram;
 
   // Default Constructor
   Laptop(this.brand, this.ram);
