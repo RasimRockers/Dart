@@ -145,8 +145,8 @@ You can explicitly define a **default constructor** without parameters.
 ### **Example: Default Constructor (Explicit)**  
 ```dart
 class Car {
-  String brand;
-  int speed;
+  String ?brand;
+  int ?speed;
 
   // Default Constructor (Explicit)
   Car() {
