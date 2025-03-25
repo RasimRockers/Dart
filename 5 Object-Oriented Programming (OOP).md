@@ -928,10 +928,12 @@ Dart **does not have a separate keyword for interfaces** like Java or C++. Inste
 
 ### **✅ Example: Using Interfaces**
 ```dart
-class Vehicle {
+// Define an abstract class
+abstract class Vehicle {
   void start(); // Abstract method
 }
 
+// Class implementing the interface
 class Car implements Vehicle {
   @override
   void start() {
@@ -940,8 +942,8 @@ class Car implements Vehicle {
 }
 
 void main() {
-  Car myCar = Car();
-  myCar.start(); // Output: Car started
+  Car c = Car();
+  c.start();  // Output: Car started
 }
 ```
 📌 **Since Dart doesn’t support multiple inheritance, interfaces allow classes to inherit behaviors without inheriting implementation.**  
