@@ -34,14 +34,11 @@ void main() {
   try {
     int result = 10 ~/ 0;
     print(result);
-  } on IntegerDivisionByZeroException {
+  } on UnsupportedError {
     print("Cannot divide by zero!");
   }
 }
-```
-#### **Output:**
-```
-Cannot divide by zero!
+
 ```
 
 ---
@@ -85,7 +82,12 @@ void main() {
 Exception caught: IntegerDivisionByZeroException
 This block always executes.
 ```
+or
+```
+Exception caught: Unsupported operation: Infinity
+This block always executes.
 
+```
 ---
 
 ### **5. Throwing Custom Exceptions**
